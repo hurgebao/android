@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/up" android:background="@android:drawable/list_selector_background" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_up" />
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_folder" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:padding="8.0dip" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:id="@id/dirName" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fastScrollEnabled="true" />
+        <TextView android:layout_gravity="center" android:id="@id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="没有文件" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_file" />
+        <EditText android:id="@id/fileName" android:layout_width="0.0px" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1.0" />
+        <Button android:id="@id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="保存" />
+    </LinearLayout>
+</LinearLayout>

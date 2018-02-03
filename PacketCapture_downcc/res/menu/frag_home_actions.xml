@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_start_1" android:id="@id/start1" android:title="捕获一个应用程序" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_start_stop" android:id="@id/startStop" android:title="启动/停止" app:showAsAction="always" />
+    <item android:id="@id/setting" android:title="设置" app:showAsAction="never" />
+    <item android:id="@id/walkthrough" android:visible="false" android:title="走过" app:showAsAction="never" />
+    <item android:id="@id/clearFirstLaunchDate" android:visible="false" android:title="清除首次发射日期" app:showAsAction="never" />
+    <item android:id="@id/dumpFD" android:visible="false" android:title="转储FD" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/decodeAs" android:title="解码" app:showAsAction="always">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@id/decodeAsHttpHeuristic" android:title="HTTP（启发式）" />
+                <item android:id="@id/decodeAsHttpStroct" android:title="HTTP（严格）" />
+                <item android:id="@id/decodeAsRaw" android:title="源码" />
+            </group>
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_download" android:id="@id/save" android:title="保存" app:showAsAction="always">
+        <menu>
+            <item android:id="@id/saveUpstream" android:title="保存请求(&lt;---)" />
+            <item android:id="@id/saveDownstream" android:title="保存响应(--->)" />
+            <item android:id="@id/saveBoth" android:title="全部保存" />
+            <item android:id="@id/savePcap" android:title="保存数据包" />
+            <item android:id="@id/saveRawForDebug" android:title="保存源码（调试）" />
+        </menu>
+    </item>
+</menu>

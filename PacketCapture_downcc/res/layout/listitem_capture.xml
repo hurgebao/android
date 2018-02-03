@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/background" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:contentDescription="app icon" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/textPrimary" android:id="@id/name" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="应用程序的名字" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/textSecondary" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="01/23 12:33" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="12.0dip" android:textColor="@color/textSecondary" android:id="@id/ip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/textSecondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/textSecondary" android:id="@id/port" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="80" />
+                <TextView android:textSize="12.0dip" android:textColor="@color/textSecondary" android:id="@id/protNo" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TCP" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:textColor="@color/textPrimary" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/fileSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dip" android:textColor="@color/textSecondary" android:id="@id/hostName" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="地址" android:layout_weight="1.0" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/colorAccent" android:gravity="center_vertical" android:layout_gravity="bottom" android:id="@id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="SSL" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

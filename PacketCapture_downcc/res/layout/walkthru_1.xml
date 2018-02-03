@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0dip" android:textColor="#ff222222" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_centerInParent="true" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff888888" android:gravity="center_horizontal" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="300.0dip" android:text="强大的Android网络调试代理" android:layout_below="@id/title" android:layout_centerHorizontal="true" />
+    <ImageView android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_margin="16.0dip" android:src="@drawable/bigicon" android:layout_above="@id/title" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="20.0dip" android:textColor="@color/walkthru_text_clickable" android:gravity="center_horizontal" android:id="@id/next" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:minWidth="160.0dip" android:text="开始使用" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

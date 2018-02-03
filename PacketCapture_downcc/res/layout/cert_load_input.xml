@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background_material_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="存储和密钥密码" />
+        <EditText android:id="@id/storePass" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <Space android:layout_width="fill_parent" android:layout_height="16.0dip" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="别名" />
+        <EditText android:id="@id/aliasName" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <Space android:layout_width="fill_parent" android:layout_height="16.0dip" />
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" />
+            <Button android:id="@id/ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="确定" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
